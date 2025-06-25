@@ -29,10 +29,12 @@ def displayer():
             for i in range(lenC):
                 print(i+1, tasks["completed"][i])
                 # print(*tasks["completed"], sep=",")
+            print()
             print("Incomplete :")
             lenI = len(tasks["incompleted"])
             for i in range(lenI):
                 print(i+1, tasks["incompleted"][i])
+            print()
         elif inp == 2:
             task = input("Enter the Task to Add : ")
             tasks["incompleted"].append(task)
@@ -47,7 +49,6 @@ def displayer():
         else:
             print("wrong input")
     checker()
-
 
 
 
